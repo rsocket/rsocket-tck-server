@@ -1,12 +1,15 @@
 plugins {
     id "org.jetbrains.kotlin.jvm" version "1.1.2"
 }
+apply plugin:'application'
 
 group 'io.rsocket'
 version '1.0-SNAPSHOT'
 
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
+
+mainClassName = "io.rsocket.rsotck.TckServer"
 
 compileKotlin {
     kotlinOptions.jvmTarget = "1.8"

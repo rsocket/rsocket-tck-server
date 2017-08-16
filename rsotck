@@ -1,0 +1,5 @@
+#!/bin/sh -e
+
+./gradlew installDist -q
+
+./build/install/rsotck/bin/rsotck
